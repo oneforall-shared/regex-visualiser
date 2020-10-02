@@ -34,6 +34,7 @@ function animationWrap(animationFunction, args, step) {
         $("#skip_button").css("visibility", "hidden");
         queue = null;
     })
+  
       $("#step_message").html("");
       args.push(queue);
       animationFunction.apply(this, args); // Start animation function
@@ -42,6 +43,8 @@ function animationWrap(animationFunction, args, step) {
         skipAnimation(step, queue);
       });
       return queue.done;
+
+
     
 }
 
