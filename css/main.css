@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: linear-gradient(45deg, rgba(252, 129, 192, 0.2), rgba(46, 255, 175, 0.3), rgba(46, 234, 255, 0.3), rgba(35, 213, 171, 0.3));
+	background: linear-gradient(45deg, rgb(4, 197, 245), rgba(46, 213, 255, 0.945), rgba(6, 214, 241, 0.863), rgba(4, 202, 252, 0.973));
 	background-size: cover;
 	margin: 0;
 	display: flex;
