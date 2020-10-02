@@ -34,14 +34,17 @@ function animationWrap(animationFunction, args, step) {
         $("#skip_button").css("visibility", "hidden");
         queue = null;
     })
-    $("#step_message").html("");
-    args.push(queue);
-    animationFunction.apply(this, args); // Start animation function
-    $("#skip_button").css("visibility", "visible");
-    $("#skip_button").click(function () {
-      skipAnimation(step, queue);
-    });
-    return queue.done;
+  
+      $("#step_message").html("");
+      args.push(queue);
+      animationFunction.apply(this, args); // Start animation function
+      $("#skip_button").css("visibility", "visible");
+      $("#skip_button").click(function () {
+        skipAnimation(step, queue);
+      });
+      return queue.done;
+
+
     
 }
 
